@@ -1,4 +1,10 @@
-
+body {
+    font-family:"Open Sans", sans-serif;
+    background: #f1f5f8;
+    color: #102a42;
+    line-height: 1.5;
+    font-size: 0.875rem;
+  }
 
 /*
 =============== 
@@ -37,3 +43,16 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  input.visually-hidden:is(:focus, :focus-within) + label {
+    outline: thin dotted;
+  }
